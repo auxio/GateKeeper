@@ -1,0 +1,25 @@
+<div class="zmodule_content panel" id="zmodule_header_<@ ModuleName @>">
+	<div class="panel-heading">
+		<img src="<@ ModuleIcon @>" width="35" height="35" border="0" alt="<@ ModuleName @>">
+		<div class="zmodule_title">
+			<@ ModuleName @>
+		</div>
+		<div class="zmodule_desc" id="zmodule_desc_<@ ModuleName @>">Gatekeeper is a module that enables you (the server administrator) to easily view and change your Sentora server's web service (XMWS) API key.</div>
+	</div>
+	<@ Result @>
+	<div class="zform_wrapper">
+		<h2><: Current API key :></h2>
+		<p><: This is your current API key that is configured on this server, you use this key to give other systems that integrate with Sentora using XMWS access to communicate with this server. :></p> 
+		<input type="text" name="inCurrent" id="inCurrent" readonly="readonly" value="<@ CurrentAPIKey @>" size="50" />
+	</div>
+	<div class="zform_wrapper">
+		<h2><: Generate new API key :></h2>
+		<p><strong><: If you generate a new API key connections from other systems that are configured to use the current API key will stop working, you must ensure that you update the API keys on all systems that connect to this server after doing so. :></strong></p>
+		<p><: If you think that your server has been breached recently it is a good idea to generate a new key to stop any other rogue systems accessing your data etc. :></p>    
+		<form action="./?module=gatekeeper&action=Generate" method="post" name="frmAPIXMWS" id="frmAPIXMWS">
+			<table class="zform">
+				<td><button class="fg-button ui-state-default ui-corner-all" type="submit" id="" name="inGenerate" value=""><: Generate new key :></button></td>
+			</table>
+		</form>	
+	</div>
+</div>

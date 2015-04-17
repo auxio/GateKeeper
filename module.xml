@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+<name>Gate Keeper</name>
+<version>100</version>
+<type>user</type>
+<defaultcat>Server Admin</defaultcat>
+<desc>Easily view and change your XMWS API server key.</desc>
+<authorname>Bobby Allen</authorname>
+<authoremail>bobbyallen.uk@gmail.com</authoremail>
+<authorurl>http://www.codejunkie87.com/</authorurl>
+<updateurl>http://www.codejunkie87.com/zuds/gatekeeper.xml</updateurl>
+</module>
